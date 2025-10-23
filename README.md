@@ -1,7 +1,10 @@
-# rt_grpo
-This the code of paper 
-_Indoor Fluid Antenna Systems Enabled by Layout-Specific Modeling and Group Relative Policy Optimization_, authored by Tong Zhang, Qianren Li, Shuai Wang, Wanli Ni, Jiliang Zhang, Rui Wang, Kai-Kit Wong, and Chan-Byoung Chae, which has been submitted to IEEE for possible publication.
-
+# GRPO
+Acknowledgments
+This project is built upon the repository QianrenLi/rt_grpo. We have made the following significant modifications and improvements:
+​Key Modifications:​​
+​Rewritten Environment: Completely redesigned and reimplemented the simulation environment for better performance and flexibility
+​CUDA Acceleration: Migrated the GRPO algorithm to run on CUDA-enabled GPUs, significantly improving training speed
+​Code Optimization: Enhanced the codebase for better maintainability and extensibility
 ## Setup
 To set up the environment, you can follow the instructions in the [`rl-baselines3-zoo`](https://github.com/DLR-RM/rl-baselines3-zoo/tree/506bb7aa40e9d90e997580a369f2e9bf64abe594) repository.
 After setting up the environment, you can apply backbone setup to setup necessary parameters and config.
