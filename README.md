@@ -1,5 +1,5 @@
 # GRPO
-This project is built upon the repository QianrenLi/rt_grpo. We have made significant modifications including a completely redesigned simulation environment for better performance and flexibility, CUDA acceleration to migrate the GRPO algorithm to GPU for substantially improved training speed, and comprehensive code optimization for enhanced maintainability and extensibility.
+This project is built upon the repository QianrenLi/rt_grpo. We have made significant modifications including a completely redesigned simulation environment for our problem and flexibility, CUDA acceleration to migrate the GRPO algorithm to GPU for substantially improved training speed, and comprehensive code optimization for enhanced maintainability and extensibility.
 ## Setup
 To set up the environment, you can follow the instructions in the [`rl-baselines3-zoo`](https://github.com/DLR-RM/rl-baselines3-zoo/tree/506bb7aa40e9d90e997580a369f2e9bf64abe594) repository.
 After setting up the environment, you can apply backbone setup to setup necessary parameters and config.
