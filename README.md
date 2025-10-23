@@ -16,11 +16,11 @@ After that, the `train.py` script can be used to train the baseline model (e.g. 
 With the trained model, you can then run the `GRPO.py` script to train the GRPO model.
 Take the initial policy PPO, 2 antenna and power constriant 1 as an example, the command is as follows:
 ```bash
-python train.py --algo ppo --env MISOEnv-antenna-2 --tensorboard-log ./logs/ --n-timesteps 25000
+python train.py --algo ppo --env MISOEnv-custom --tensorboard-log ./logs/ --n-timesteps 3000000
 ```
 and then you can run the GRPO algorithm with the following command:
 ```bash
-python3 GRPO.py  --env MISOEnv-antenna-2 --exp-id 1 --algo ppo --folder ./logs/
+python GRPO.py  --env MISOEnv-custom --exp-id 1 --algo ppo --folder ./logs/
 ```
 where `--env` specifies the environment, `--exp-id` specifies the experiment ID, `--algo` specifies the algorithm in the initial point  (e.g. PPO), and `--folder` specifies the folder where the logs will be saved.
 
