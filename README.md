@@ -22,8 +22,6 @@ python GRPO.py  --env MISOEnv-custom --exp-id 1 --algo ppo --folder ./logs/
 ```
 where `--env` specifies the environment, `--exp-id` specifies the experiment ID, `--algo` specifies the algorithm in the initial point  (e.g. PPO), and `--folder` specifies the folder where the logs will be saved.
 
-## Evaluation
-To evaluate the trained model, you can use the `GRPO.py` script. The script takes the trained model and evaluates it on the environment. (Note the model name should be specified if you want to evaluate a specific model)
 
 ```bash
 python3 GRPO.py --env MISOEnv-custom --exp-id 1 --algo ppo --folder ./logs/ --eval
