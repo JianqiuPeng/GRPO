@@ -96,7 +96,7 @@ class MISOEnv:
         self.current_estimated: Optional[np.ndarray] = None  # nominal (estimated) channels
         self.channel_errors: Optional[np.ndarray] = None
         self.t = 0
-        base_cov = np.array([[2.0, 1.0], [1.0, 2.0]], dtype=np.float64) * (10.0 ** -6.5)
+        base_cov = np.array([[2.0, 1.0], [1.0, 2.0]], dtype=np.float64) * (10.0 ** -2)
         chosen_cov = error_covariance if error_covariance is not None else base_cov
         self.error_covariance = np.asarray(chosen_cov, dtype=np.float64)
         self.best_sum_rate: float = float("-inf")
