@@ -1,6 +1,6 @@
 # GRPO_CUDA
 This repository contains the official implementation of the paper **"Group Relative Policy Optimization for Robust Blind Interference Alignment with Fluid Antennas"**.This project is built upon the repository QianrenLi/rt_grpo. We have made significant modifications including a completely redesigned simulation environment for our problem and flexibility, CUDA acceleration to migrate the GRPO algorithm to GPU for substantially improved training speed, and comprehensive code optimization for enhanced maintainability and extensibility.
-Key Features and Improvements
+### Key Features and Improvements
 
 Redesigned Simulation Environment
 A fully customized and flexible simulation framework tailored for robust blind interference alignment problems with fluid antennas.
