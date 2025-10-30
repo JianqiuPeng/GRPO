@@ -37,7 +37,6 @@ where `--env` specifies the environment, `--exp-id` specifies the experiment ID,
 ```bash
 python3 GRPO.py --env MISOEnv-custom --exp-id 1 --algo ppo --folder ./logs/ --eval
 ```
-where `--env` specifies the environment, `--exp-id` specifies the experiment ID, `--algo` specifies the algorithm in the initial point (e.g. PPO), and `--folder` specifies the folder where the logs will be saved. The `--eval` flag indicates that you want to evaluate the model.
 
 ## TODO
 
