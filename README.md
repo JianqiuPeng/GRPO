@@ -33,10 +33,6 @@ python GRPO.py  --env MISOEnv-custom --exp-id 1 --algo ppo --folder ./logs/
 ```
 where `--env` specifies the environment, `--exp-id` specifies the experiment ID, `--algo` specifies the algorithm in the initial point  (e.g. PPO), and `--folder` specifies the folder where the logs will be saved.
 
-
-```bash
-```
-
 ## TODO
 
 - [ ] Add more details to the README file.
