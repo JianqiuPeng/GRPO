@@ -63,7 +63,7 @@ class FieldResponseChannel:
         #   (each entry stores complex gain between RX and TX paths)
         sigma_real = torch.randn(self.K, self.L_r, self.L_t)
         sigma_imag = torch.randn(self.K, self.L_r, self.L_t)
-        self.Sigma = 0.06415 * torch.complex(sigma_real, sigma_imag) / math.sqrt(2.0)
+        self.Sigma = 0.01 * torch.complex(sigma_real, sigma_imag) / math.sqrt(2.0)
 
     def _init_angles(self, num_entities: int, num_paths: int) -> Dict[str, torch.Tensor]:
         # 使用固定种子生成随机角度
