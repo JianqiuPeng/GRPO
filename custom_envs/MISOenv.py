@@ -41,7 +41,7 @@ class MISOEnv:
         tx_positions: Optional[np.ndarray] = None,
         region: Optional[RegionConfig] = None,
         min_distance: float = 0.0025,
-        tx_power: float = 0.1,
+        tx_power: float = 0.25,
         noise_power: float = 1e-9,
         seed: int = 42,
         max_steps: int = 50,
@@ -96,7 +96,7 @@ class MISOEnv:
         self.current_estimated: Optional[np.ndarray] = None  # nominal (estimated) channels
         self.channel_errors: Optional[np.ndarray] = None
         self.t = 0
-        base_cov = np.array([[2.0, 1.0], [1.0, 2.0]], dtype=np.float64) * (10.0 ** -2)
+        base_cov = np.array([[2.0, 1.0], [1.0, 2.0]], dtype=np.float64) * 0.1 * (10.0 ** -2)
         chosen_cov = error_covariance if error_covariance is not None else base_cov
         self.error_covariance = np.asarray(chosen_cov, dtype=np.float64)
         self.best_sum_rate: float = float("-inf")
@@ -327,7 +327,7 @@ class MISOEnvWrapper(gym.Env):
             "tx_positions": kwargs.get("tx_positions"),
             "region": kwargs.get("region", RegionConfig(center=np.ones(3) * 3, size=0.5)),
             "min_distance": kwargs.get("min_distance", 0.0025),
-            "tx_power": kwargs.get("tx_power", 0.1),
+            "tx_power": kwargs.get("tx_power", 0.25),
             "noise_power": kwargs.get("noise_power", 1e-9),
             "seed": kwargs.get("seed", 42),
             "max_steps": kwargs.get("max_steps", 50),
